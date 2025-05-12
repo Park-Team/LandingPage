@@ -1,0 +1,643 @@
+/* Global styles for EzPark Landing Page */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Global base styles */
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #495057;
+  line-height: 1.6;
+}
+
+.btnConocerMas{
+  background-color: #3c4e67;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.heroImage{
+  display: flex;
+  justify-content: center;
+  padding-inline: 6rem;
+  width: 40%;
+  height: auto;
+}
+
+.sectionInfo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sectionInfo h2 {
+    font-family: "Rubik", system-ui, "-apple-system", sans-serif;
+    font-size: 3rem;
+    color: #3c4e67;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, .25);
+}
+
+.sectionInfo > p {
+    font-size: 1.2rem;
+    color: #495057;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infoCards {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.infoCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.cardIcon {
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.cardIcon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.cardText {
+    flex-grow: 1;
+}
+
+.cardText p {
+    font-size: 1.1rem;
+    color: #495057;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.sectionUso{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+padding-top: 1rem;
+  padding-bottom: 3rem;
+
+  flex-direction: column;
+}
+
+.sectionUso h2{
+  font-family: "Rubik", system-ui, "-apple-system", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 6.4rem;
+  text-align: center;
+  color: #3c4e67;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, .25);
+}
+
+.sectionUso p{
+  text-align: center;
+  color: #495057;
+  font-size: 1.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  font-family: "Mulish", system-ui, "-apple-system", sans-serif;
+}
+
+.usoCards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10rem;
+  padding-top: 0.5rem;
+}
+
+.usoCard {
+  text-align: center;
+}
+
+.usoCardIcon {
+  padding: 1rem;
+  background-color: #FDF1ED;
+  border-radius: 20%;
+  width: 100px;
+  display: flex;
+  justify-self: center;
+}
+
+.usoCardIcon img {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  height: auto;
+}
+
+.usoCardText h3 {
+  font-size: 1.2rem;
+  color: #333;
+  padding-top: 1rem;
+}
+
+.usoCardText p {
+  color: #495057;
+  padding-top: 0.5rem;
+}
+
+.usoCardText h3{
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+.espacio{
+  display: block;
+}
+.testimonials-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  background-color: #283445;
+}
+
+.testimonials-section h2 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: white;
+  font-family: "Rubik", system-ui, "-apple-system", sans-serif;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.testimonials-container {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.testimonial-group {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+  flex-shrink: 0;
+  padding: 10px;
+}
+
+.testimonial-group.active {
+  display: flex;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  width: 440px;
+  height: auto;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 0.1rem;
+}
+
+.testimonial-img-placeholder img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border-color: #ee6d45;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.testimonial-user-info {
+  flex: 1;
+  text-align: left;
+}
+
+.name-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+.testimonial-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  color: #2c3e50;
+}
+
+.testimonial-rating {
+  background: #f8f9fa;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.testimonial-location {
+  font-size: 1.02rem;
+  color: #7f8c8d;
+  padding-left: 1rem;
+}
+
+.testimonial-text {
+  font-size: 15px;
+  color: #34495e;
+  line-height: 1.6;
+  margin: 15px 0 0;
+  padding-top: 15px;
+  border-top: 1px solid #ecf0f1;
+  text-align: left;
+  quotes: """ """;
+  font-style: italic;
+}
+
+.testimonial-text::before {
+  content: open-quote;
+  font-size: 24px;
+  color: #bdc3c7;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+.testimonial-text::after {
+  content: close-quote;
+  font-size: 24px;
+  color: #bdc3c7;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.carousel-prev, .carousel-next {
+  background: #ee6d45;
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+  background: #ee6d45;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background: #ee6d45;
+}
+
+.sectionPrecios {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.sectionPrecios h2 {
+  color: #2c3e50;
+  font-family: "Rubik", system-ui, "-apple-system", sans-serif;
+  font-size: 3rem;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, .25);
+}
+
+.sectionPrecios p {
+  color: #495057;
+}
+
+.precioCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.cardPrecio {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.cardPrecioIcon {
+  padding: 1rem;
+  background-color: #FDF1ED;
+  border-radius: 20%;
+  width: 100px;
+  display: flex;
+  justify-self: center;
+}
+
+.cardPrecioIcon img {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: auto;
+}
+
+.cardPrecioText {
+  text-align: left;
+}
+
+.cardPrecioText h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+.cardPrecioText p {
+  color: #495057;
+  font-size: 1rem;
+}
+
+.sectionNosotros {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em 0;
+  text-align: center;
+}
+
+.sectionNosotros h2 {
+  font-size: 3rem;
+  color: #3c4e67;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, .25);
+  font-family: 'rubik', system-ui, '-apple-system', sans-serif;
+}
+
+.sectionNosotros p {
+  color: #495057;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 1em auto 3em;
+  line-height: 1.6;
+}
+
+.equipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.equipoCard {
+  padding: 25px;
+  transition: all 0.3s ease;
+  max-width: 300px;
+  width: 100%;
+  border: #333;
+  border-radius: 10%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.equipoCardIcon {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #F28461;
+}
+
+.equipoCardIcon img {
+  width: 75%;
+  height: auto;
+  object-fit: cover;
+}
+
+.equipoCardText {
+  text-align: center;
+}
+
+.equipoCardText p {
+  margin: 0;
+  color: #495057;
+  line-height: 1.6;
+}
+
+.equipoCardText p strong {
+  font-size: 1.2rem;
+  color: #495057;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.mainFooter {
+  background: #3c4e67;
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainFooter img {
+  width: 120px;
+  height: auto;
+}
+
+.mainFooter p {
+  flex: 1;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialIcons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.socialIcons a:hover img {
+  transform: scale(1.1);
+}
+
+/* =======================
+   Responsive Smartphone
+==========================*/
+@media (max-width: 767px) {
+  .infoCards {
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .usoCards {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .testimonials-section h2,
+  .sectionInfo h2,
+  .sectionUso h2,
+  .sectionPrecios h2,
+  .sectionNosotros h2 {
+    font-size: 2rem;
+  }
+
+  .testimonials-container {
+    padding: 0 1rem;
+  }
+
+  .testimonial-group {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+
+  .testimonial-group.active {
+    display: flex;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .testimonial-card:not(:first-child) {
+    display: block;
+  }
+
+  .carousel-controls {
+    margin-top: 1.5rem;
+  }
+
+  .precioCards {
+    grid-template-columns: 1fr;
+  }
+
+  .mainFooter {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .socialIcons {
+    justify-content: center;
+  }
+}
+
+.scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #3c4e67;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: opacity 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scrollTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Tablet (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .heroSection {
+    flex-direction: column;
+    padding: 3rem 2rem;
+  }
+
+  .heroContent h1 {
+    font-size: 3.5rem;
+  }
+
+  .heroImage {
+    width: 70%;
+    padding-inline: 0;
+  }
+
+  .infoCards {
+    gap: 2rem;
+  }
+
+  .usoCards {
+    gap: 4rem;
+  }
+
+  .testimonial-card {
+    width: 100%;
+  }
+
+  .precioCards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mainFooter {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,116 @@
+.sectionTestimonios {
+    max-width: 1200px;
+
+    text-align: center;
+    position: relative;
+}
+
+.sectionTestimonios h2 {
+    font-family: "Rubik", system-ui, "-apple-system", sans-serif;
+    font-size: 3rem;
+    color: #3c4e67;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.sectionTestimonios p {
+    font-size: 1.25rem;
+    color: #495057;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonioSlider {
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonioContent {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonioCard {
+    min-width: 300px;
+    flex: 1;
+    margin: 0 15px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonioHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonioImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.testimonioInfo h3 {
+    font-family: "Rubik", system-ui, "-apple-system", sans-serif;
+    font-size: 1.2rem;
+    color: #3c4e67;
+    margin: 0;
+}
+
+.testimonioInfo p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin: 5px 0 0;
+}
+
+.testimonioText {
+    font-size: 1rem;
+    color: #495057;
+    line-height: 1.6;
+}
+
+.testimonioControls {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.testimonioControl {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #3c4e67;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.testimonioControl:focus {
+    outline: none;
+}
+
+.testimonioIndicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.testimonioIndicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dee2e6;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.testimonioIndicator.active {
+    background-color: #f28461;
+}

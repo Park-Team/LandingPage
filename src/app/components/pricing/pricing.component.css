@@ -1,0 +1,127 @@
+.sectionPrecios {
+    padding: 1rem;
+    text-align: center;
+}
+
+.sectionPrecios h2 {
+    font-family: "Rubik", system-ui, "-apple-system", sans-serif;
+    font-size: 3rem;
+    color: #3c4e67;
+    font-weight: 700;
+
+}
+
+.sectionPrecios p {
+    font-size: 1.25rem;
+    color: #495057;
+padding-top: 0.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.preciosCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+
+}
+
+.precioCard {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.precioCard:hover {
+    transform: translateY(-10px);
+}
+
+.precioPopular {
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    background-color: #f28461;
+    color: white;
+    padding: 5px 40px;
+    transform: rotate(45deg);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.precioIcon {
+    background-color: #e9ecef;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.precioIcon img {
+    width: 40px;
+    height: 40px;
+}
+
+.precioTitulo {
+    font-family: "Rubik", system-ui, "-apple-system", sans-serif;
+    font-size: 1.8rem;
+    color: #3c4e67;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.precioCosto {
+    font-family: "Rubik", system-ui, "-apple-system", sans-serif;
+    font-size: 2.5rem;
+    color: #f28461;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.precioCosto span {
+    font-size: 1rem;
+    color: #6c757d;
+    font-weight: normal;
+}
+
+.precioLista {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.precioLista li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+    color: #495057;
+}
+
+.precioLista li:last-child {
+    border-bottom: none;
+}
+
+.btnPrecio {
+    display: inline-block;
+    background-color: #3c4e67;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btnPrecio:hover {
+    background-color: #2d3b4e;
+}

@@ -1,0 +1,66 @@
+.sectionInfo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sectionInfo h2 {
+    font-family: "Rubik", system-ui, "-apple-system", sans-serif;
+    font-size: 3rem;
+    color: #3c4e67;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.sectionInfo p {
+    font-size: 1.25rem;
+    color: #495057;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infoCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.infoCard {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.infoCard:hover {
+    transform: translateY(-10px);
+}
+
+.cardIcon {
+    background-color: #f9eae1;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.cardIcon img {
+    width: 40px;
+    height: 40px;
+}
+
+.cardText p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+

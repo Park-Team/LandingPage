@@ -1,0 +1,45 @@
+.mainFooter {
+  background: #3c4e67;
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainFooter img {
+  width: 120px;
+  height: auto;
+}
+
+.mainFooter p {
+  flex: 1;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialIcons a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.socialIcons a:hover {
+    transform: scale(1.1);
+}
+
+.socialIcons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}

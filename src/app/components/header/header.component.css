@@ -1,0 +1,27 @@
+.logo-img {
+  width: 100%; 
+}
+
+.navbar-nav .nav-link {
+    color: #212529;
+    font-size: 1rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+}
+
+.nav-buttons .btn-registro {
+  text-decoration: underline;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+.nav-buttons .btn-login {
+  background-color: #3c4e67;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}

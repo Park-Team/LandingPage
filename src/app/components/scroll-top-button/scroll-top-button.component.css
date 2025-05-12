@@ -1,0 +1,34 @@
+.scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    background-color: #3c4e67;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.scrollTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scrollTopBtn:hover {
+    background-color: #2d3b4e;
+}
+
+.scrollTopBtn:focus {
+    outline: none;
+}
